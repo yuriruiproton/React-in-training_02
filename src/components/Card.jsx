@@ -1,21 +1,15 @@
-import image from "../assets/img.jpg"
 import styles from '../components/styles.module.css'
+import Button from "../components/Button/Button"
 
-
-export default function Card(){
+export default function Card(props){
     return(
       
             <div className={styles.container}>
-            <img className={styles.poster} src={image} alt="Star wars Poster"/>
+            <img className={styles.poster} src={props.posterImage} alt={props.title}/>
                 <div>
-                <h2>Poster do Filme Star Wars</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio libero inventore 
-                    consectetur sed ut dicta dolores odio impedit! Natus autem doloribus adipisci.
-                     Aspernatur autem repudiandae nisi fugiat, deleniti vero dignissimos.
-                     Voluptatum quisquam doloremque soluta deleniti animi mollitia, distinctio deserunt 
-                    esse eum libero delectus assumenda. Aut cum facere alias quae reprehenderit quia, 
-                    veniam, nobis nesciunt dolorum doloremque, exercitationem vero voluptatum repudiandae.</p>
-                <button>Comprar Agora</button>
+                <h2>{props.title}</h2>
+                <p>{props.content}</p>
+                    <Button/>
                 </div>
             </div>
        

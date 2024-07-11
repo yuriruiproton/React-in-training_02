@@ -25,19 +25,3 @@
     text-align: justify;
 }
 
-.container button{
-    padding: .75em 1.25em;
-    margin-top: 12px;
-    border-radius: 8px;
-    background-color: #121212;
-    border: 0;
-    box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 1rem;
-    transition: .3s;
-}
-.container button:hover{
-    background-color: #d7e1e7;
-    cursor: pointer;
-    margin-left: .5rem;
-}

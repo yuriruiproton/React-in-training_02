@@ -7,7 +7,7 @@ import image02 from './assets/img02.jpg'
 
 function App() {
    return(
-      <Fragment>
+      <>
          <Card title="Poster: Star Wars (1977)" 
                posterImage={image}
                content="Star Wars (Brasil: Guerra nas Estrelas / Portugal: 
@@ -46,7 +46,7 @@ function App() {
                   fighters of the Rebel Alliance."
       
             />
-      </Fragment>
+      </>
    )
 }
 
